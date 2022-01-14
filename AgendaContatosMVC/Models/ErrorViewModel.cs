@@ -1,6 +1,6 @@
 using System;
 
-namespace AgendaContatosMVC.Models.ViewModels
+namespace AgendaContatosMVC.Models
 {
     public class ErrorViewModel
     {

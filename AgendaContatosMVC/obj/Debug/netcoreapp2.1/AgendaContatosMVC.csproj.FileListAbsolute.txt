@@ -33,3 +33,9 @@ D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netco
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.pdb
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.genruntimeconfig.cache
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.csproj.CopyComplete
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.csproj.AssemblyReference.cache
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Create.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Delete.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Details.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Edit.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Index.cshtml.g.cs
