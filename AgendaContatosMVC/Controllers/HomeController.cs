@@ -17,14 +17,15 @@ namespace AgendaContatosMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Descrições sobre sistema Agenda Client.";
+            ViewData["Developer"] = "Guilherme Bandeira Ludovico";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Tilt System Developer";
 
             return View();
         }
