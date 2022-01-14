@@ -1,4 +1,4 @@
-﻿using AgendaContatosMVC.Models;
+﻿using AgendaContatosMVC.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
