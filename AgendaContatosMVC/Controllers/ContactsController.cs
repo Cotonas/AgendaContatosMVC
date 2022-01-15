@@ -116,6 +116,7 @@ namespace AgendaContatosMVC.Controllers
             return View(contact);
         }
 
+
         // GET: Contacts/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
