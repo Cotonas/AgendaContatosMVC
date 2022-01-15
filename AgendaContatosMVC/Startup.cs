@@ -37,7 +37,8 @@ namespace AgendaContatosMVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<AgendaContatosMVCContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("AgendaContatosMVCContext")));
+                    options.UseMySql(Configuration.GetConnectionString("AgendaContatosMVCContext"), builder =>
+                        builder.MigrationsAssembly("AgendaContatosMVC")));
 
         }
 
