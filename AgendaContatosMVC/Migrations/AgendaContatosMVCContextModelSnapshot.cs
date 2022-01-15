@@ -24,7 +24,7 @@ namespace AgendaContatosMVC.Migrations
 
                     b.Property<string>("Celular");
 
-                    b.Property<int>("Cpf");
+                    b.Property<string>("Cpf");
 
                     b.Property<DateTime>("DataNascmento");
 

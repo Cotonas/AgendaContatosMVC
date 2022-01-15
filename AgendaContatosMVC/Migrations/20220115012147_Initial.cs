@@ -16,7 +16,7 @@ namespace AgendaContatosMVC.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
                     Rg = table.Column<int>(nullable: false),
-                    Cpf = table.Column<int>(nullable: false),
+                    Cpf = table.Column<string>(nullable: true),
                     DataNascmento = table.Column<DateTime>(nullable: false),
                     Endereco = table.Column<string>(nullable: true),
                     Telefone = table.Column<string>(nullable: true),

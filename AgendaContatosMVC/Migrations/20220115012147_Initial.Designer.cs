@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgendaContatosMVC.Migrations
 {
     [DbContext(typeof(AgendaContatosMVCContext))]
-    [Migration("20220115010552_Initial")]
+    [Migration("20220115012147_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,7 +26,7 @@ namespace AgendaContatosMVC.Migrations
 
                     b.Property<string>("Celular");
 
-                    b.Property<int>("Cpf");
+                    b.Property<string>("Cpf");
 
                     b.Property<DateTime>("DataNascmento");
 
