@@ -23,7 +23,7 @@ namespace AgendaContatosMVC.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Support()
         {
             ViewData["Message"] = "Tilt System Developer";
 

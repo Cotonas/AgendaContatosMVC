@@ -17,7 +17,6 @@ D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netco
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.TagHelpers.output.cache
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\AgendaContatosMVC.RazorCoreGenerate.cache
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
-D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -39,3 +38,4 @@ D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netco
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Details.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Edit.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contacts\Index.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Support.cshtml.g.cs
