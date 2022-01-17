@@ -12,5 +12,18 @@ namespace AgendaContatosMVC.Models
         public string Endereco { get; set; }
         public string Telefone { get; set; }
         public string Celular { get; set; }
+
+        public Contact()
+        {
+
+        }
+
+        public Contact(int id, string endereco, string telefone, string celular)
+        {
+            Id = id;
+            Endereco = endereco;
+            Telefone = telefone;
+            Celular = celular;
+        }
     }
 }
