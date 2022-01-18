@@ -3,14 +3,16 @@ using System;
 using AgendaContatosMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AgendaContatosMVC.Migrations
 {
     [DbContext(typeof(AgendaContatosMVCContext))]
-    partial class AgendaContatosMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20220118031547_Foreignkey")]
+    partial class Foreignkey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,6 +28,10 @@ namespace AgendaContatosMVC.Migrations
 
                     b.Property<DateTime>("DataNascmento");
 
+                    b.Property<int>("EnderecoId");
+
+                    b.Property<int>("FoneId");
+
                     b.Property<string>("Name");
 
                     b.Property<string>("Rg");
@@ -40,7 +46,7 @@ namespace AgendaContatosMVC.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("ContactId");
+                    b.Property<int?>("ContactId");
 
                     b.Property<string>("Enderecos");
 
@@ -58,7 +64,7 @@ namespace AgendaContatosMVC.Migrations
 
                     b.Property<string>("Celular");
 
-                    b.Property<int>("ContactId");
+                    b.Property<int?>("ContactId");
 
                     b.Property<string>("Telefone");
 
@@ -73,16 +79,14 @@ namespace AgendaContatosMVC.Migrations
                 {
                     b.HasOne("AgendaContatosMVC.Models.Contact", "Contact")
                         .WithMany("Enderecos")
-                        .HasForeignKey("ContactId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ContactId");
                 });
 
             modelBuilder.Entity("AgendaContatosMVC.Models.Fone", b =>
                 {
                     b.HasOne("AgendaContatosMVC.Models.Contact", "Contact")
                         .WithMany("Fones")
-                        .HasForeignKey("ContactId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ContactId");
                 });
 #pragma warning restore 612, 618
         }

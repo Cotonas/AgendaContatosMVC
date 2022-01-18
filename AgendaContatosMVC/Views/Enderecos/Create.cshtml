@@ -1,0 +1,32 @@
+﻿@model AgendaContatosMVC.Models.ViewModel.ContactFormViewModel
+
+@{
+    ViewData["Title"] = "Criar novo Endereço";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Endereco.Enderecos" class="control-label"></label>
+                <input asp-for="Endereco.Enderecos" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.ContactId" class="control-label"></label>
+                <input asp-for="Endereco.ContactId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.ContactId" class="control-label"></label>
+                <select asp-for="Endereco.ContactId" asp-items="@(new SelectList(Model.Contacts,"Id","Name"))" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

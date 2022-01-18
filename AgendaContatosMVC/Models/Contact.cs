@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AgendaContatosMVC.Models
 {
@@ -6,24 +7,43 @@ namespace AgendaContatosMVC.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Rg { get; set; }
+        public string Rg { get; set; }
         public string Cpf { get; set; }
         public DateTime DataNascmento { get; set; }
-        public string Endereco { get; set; }
-        public string Telefone { get; set; }
-        public string Celular { get; set; }
+        public ICollection<Fone> Fones { get; set; }
+        public ICollection<Endereco> Enderecos { get; set; }
 
         public Contact()
         {
 
         }
 
-        public Contact(int id, string endereco, string telefone, string celular)
+        public Contact(int id, string name, string rg, string cpf, DateTime dataNascmento)
         {
             Id = id;
-            Endereco = endereco;
-            Telefone = telefone;
-            Celular = celular;
+            Name = name;
+            Rg = rg;
+            Cpf = cpf;
+            DataNascmento = dataNascmento;
+        }
+
+        public void AddFone(Fone f)
+        {
+            Fones.Add(f);
+        }
+
+        public void RemoveFone(Fone f)
+        {
+            Fones.Remove(f);
+        }
+
+        public void AddEndereco(Endereco end)
+        {
+            Enderecos.Add(end);
+        }
+        public void RemoveEndereco(Endereco end)
+        {
+            Enderecos.Remove(end);
         }
     }
 }

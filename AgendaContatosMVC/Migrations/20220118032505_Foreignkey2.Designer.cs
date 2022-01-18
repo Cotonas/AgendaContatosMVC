@@ -3,14 +3,16 @@ using System;
 using AgendaContatosMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AgendaContatosMVC.Migrations
 {
     [DbContext(typeof(AgendaContatosMVCContext))]
-    partial class AgendaContatosMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20220118032505_Foreignkey2")]
+    partial class Foreignkey2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

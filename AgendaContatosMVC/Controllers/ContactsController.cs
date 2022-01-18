@@ -54,7 +54,7 @@ namespace AgendaContatosMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Rg,Cpf,DataNascmento,Endereco,Telefone,Celular")] Contact contact)
+        public async Task<IActionResult> Create([Bind("Id,Name,Rg,Cpf,DataNascmento")] Contact contact)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace AgendaContatosMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Rg,Cpf,DataNascmento,Endereco,Telefone,Celular")] Contact contact)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Rg,Cpf,DataNascmento")] Contact contact)
         {
             if (id != contact.Id)
             {
@@ -115,7 +115,6 @@ namespace AgendaContatosMVC.Controllers
             }
             return View(contact);
         }
-
 
         // GET: Contacts/Delete/5
         public async Task<IActionResult> Delete(int? id)

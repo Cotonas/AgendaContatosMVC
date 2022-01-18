@@ -1,11 +1,12 @@
 ﻿@model AgendaContatosMVC.Models.Contact
 
 @{
-    ViewData["Title"] = "Editar";
+    ViewData["Title"] = "Edit";
 }
 
-<h2>Alteração de Contato</h2>
+<h2>Edit</h2>
 
+<h4>Contact</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -33,21 +34,6 @@
                 <span asp-validation-for="DataNascmento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Endereco" class="control-label"></label>
-                <input asp-for="Endereco" class="form-control" />
-                <span asp-validation-for="Endereco" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Telefone" class="control-label"></label>
-                <input asp-for="Telefone" class="form-control" />
-                <span asp-validation-for="Telefone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Celular" class="control-label"></label>
-                <input asp-for="Celular" class="form-control" />
-                <span asp-validation-for="Celular" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </form>
@@ -55,7 +41,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar a lista</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

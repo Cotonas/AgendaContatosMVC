@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using AgendaContatosMVC.Models;
 
 namespace AgendaContatosMVC.Data
 {
@@ -9,7 +10,10 @@ namespace AgendaContatosMVC.Data
             : base(options)
         {
         }
+        public DbSet<AgendaContatosMVC.Models.Contact> Contact { get; set; }
+        public DbSet<AgendaContatosMVC.Models.Fone> Fone { get; set; }
+        public DbSet<AgendaContatosMVC.Models.Endereco> Endereco { get; set; }
 
-        public DbSet<Models.Contact> Contact { get; set; }
+        
     }
 }

@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using AgendaContatosMVC.Data;
+using AgendaContatosMVC.Services;
 
 namespace AgendaContatosMVC
 {
@@ -39,6 +40,10 @@ namespace AgendaContatosMVC
             services.AddDbContext<AgendaContatosMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("AgendaContatosMVCContext"), builder =>
                         builder.MigrationsAssembly("AgendaContatosMVC")));
+           
+            services.AddScoped<FoneService>();
+            services.AddScoped<EnderecoService>();
+            services.AddScoped<ContactService>();
 
         }
 

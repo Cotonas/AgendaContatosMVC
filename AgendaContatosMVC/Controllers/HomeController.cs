@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using AgendaContatosMVC.Models;
+using AgendaContatosMVC.Models.ViewModel;
 
 namespace AgendaContatosMVC.Controllers
 {
