@@ -39,5 +39,28 @@ namespace AgendaContatosMVC.Controllers
             _enderecoService.Insert(endereco);
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var obj = _enderecoService.FindById(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _enderecoService.Remove(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

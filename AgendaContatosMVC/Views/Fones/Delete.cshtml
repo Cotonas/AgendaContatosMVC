@@ -1,0 +1,37 @@
+﻿@model AgendaContatosMVC.Models.Fone
+
+@{
+    ViewData["Title"] = "Deletar Telefone";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h3>Você tem certeza que deseja deletar este telefone?</h3>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.ContactId)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index">Voltar a Lista</a>
+    </form>
+</div>

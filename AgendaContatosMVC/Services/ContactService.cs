@@ -19,5 +19,17 @@ namespace AgendaContatosMVC.Services
         {
             return _context.Contact.OrderBy(x => x.Name).ToList();
         }
+
+        public Contact FindById(int id)
+        {
+            return _context.Contact.FirstOrDefault(obj => obj.Id == id);
+        }
+
+        public void Remove( int id)
+        {
+            var obj = _context.Contact.Find(id);
+            _context.Contact.Remove(obj);
+            _context.SaveChanges();
+        }
     }
 }
