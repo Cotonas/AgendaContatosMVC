@@ -38,6 +38,10 @@ namespace AgendaContatosMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Endereco endereco)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(endereco);
+            }
             _enderecoService.Insert(endereco);
             return RedirectToAction(nameof(Index));
         }
@@ -102,10 +106,16 @@ namespace AgendaContatosMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Endereco endereco)
         {
-            if(id != endereco.Id)
+            if (!ModelState.IsValid)
+            {
+                return View(endereco);
+            }
+
+            if (id != endereco.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
             }
+
             try
             {
                 _enderecoService.Update(endereco);

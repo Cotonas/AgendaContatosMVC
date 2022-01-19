@@ -36,6 +36,10 @@ namespace AgendaContatosMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Fone fone)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(fone);
+            }
             _foneService.Insert(fone);
             return RedirectToAction(nameof(Index));
         }
@@ -101,6 +105,10 @@ namespace AgendaContatosMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Fone fone)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(fone);
+            }
             if (id != fone.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });

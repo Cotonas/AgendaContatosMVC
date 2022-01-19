@@ -3,12 +3,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 using Microsoft.EntityFrameworkCore;
 using AgendaContatosMVC.Data;
 using AgendaContatosMVC.Services;
@@ -40,7 +42,7 @@ namespace AgendaContatosMVC
             services.AddDbContext<AgendaContatosMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("AgendaContatosMVCContext"), builder =>
                         builder.MigrationsAssembly("AgendaContatosMVC")));
-           
+
             services.AddScoped<FoneService>();
             services.AddScoped<EnderecoService>();
             services.AddScoped<ContactService>();
@@ -50,6 +52,16 @@ namespace AgendaContatosMVC
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            var ptBr = new CultureInfo("pt-BR");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(ptBr),
+                SupportedCultures = new List<CultureInfo> { ptBr },
+                SupportedUICultures = new List<CultureInfo> { ptBr }
+            };
+
+            app.UseRequestLocalization(localizationOptions);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
