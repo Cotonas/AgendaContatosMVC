@@ -46,3 +46,5 @@ D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netco
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Enderecos\Delete.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Fones\Delete.cshtml.g.cs
 D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Fones\Edit.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Enderecos\Details.cshtml.g.cs
+D:\temp\ws-vs2022\LinguagemC\AgendaContatosMVC\AgendaContatosMVC\obj\Debug\netcoreapp2.1\Razor\Views\Fones\Details.cshtml.g.cs

@@ -1,0 +1,41 @@
+﻿@model AgendaContatosMVC.Models.Fone
+@{
+    ViewData["Title"] = "Detalhes de Contato";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Telefones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ContactId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contact.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-default">Editar</a>
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
